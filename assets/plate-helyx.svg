@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Three Heideggers Helyx</title>
+  <desc id="desc">Three looping reading orientations: care, history of Being, and dwelling. Curved connections run between them. Each carries a danger: heroic subject, mythopolitical capture, poetic quietism.</desc>
+  <rect width="1200" height="760" fill="#f5f1e8"/>
+  <g stroke="#cfdbd3" stroke-width="1">
+    <path d="M40 100H1160M40 230H1160M40 360H1160M40 490H1160M40 620H1160"/>
+    <path d="M60 70V690M240 70V690M420 70V690M600 70V690M780 70V690M960 70V690M1140 70V690"/>
+  </g>
+  <text x="50" y="55" fill="#416f70" font-family="Arial,sans-serif" font-size="15" letter-spacing="4">BEYNGLAB / PLATE 01</text>
+  <text x="1150" y="55" text-anchor="end" fill="#416f70" font-family="Arial,sans-serif" font-size="14" letter-spacing="2">READING COILS / V 1.0</text>
+  <g fill="none" stroke="#82a5a0" stroke-width="2.5">
+    <path d="M326 315C392 198 541 175 608 280"/>
+    <path d="M612 455C676 590 823 592 865 476"/>
+    <path d="M890 276C744 99 416 82 288 374" stroke-dasharray="9 8"/>
+    <path d="M290 480C433 675 757 682 885 444" stroke-dasharray="9 8"/>
+  </g>
+  <g>
+    <circle cx="285" cy="375" r="174" fill="#e4ece6" fill-opacity=".8" stroke="#173c4b" stroke-width="3"/>
+    <ellipse cx="285" cy="375" rx="172" ry="76" transform="rotate(-30 285 375)" fill="none" stroke="#416f70" stroke-width="2"/>
+    <circle cx="596" cy="363" r="174" fill="#ecede3" fill-opacity=".82" stroke="#173c4b" stroke-width="3"/>
+    <ellipse cx="596" cy="363" rx="172" ry="76" transform="rotate(30 596 363)" fill="none" stroke="#416f70" stroke-width="2"/>
+    <circle cx="906" cy="375" r="174" fill="#e5ebe5" fill-opacity=".85" stroke="#173c4b" stroke-width="3"/>
+    <ellipse cx="906" cy="375" rx="172" ry="76" transform="rotate(-30 906 375)" fill="none" stroke="#416f70" stroke-width="2"/>
+  </g>
+  <g text-anchor="middle" fill="#173c4b">
+    <text x="285" y="343" font-family="Georgia,serif" font-size="43">Care</text>
+    <text x="285" y="375" font-family="Arial,sans-serif" font-size="16" letter-spacing="2">DASEIN / WORLD</text>
+    <text x="285" y="402" font-family="Georgia,serif" font-style="italic" font-size="20">1927–33</text>
+    <text x="596" y="329" font-family="Georgia,serif" font-size="34">History of Being</text>
+    <text x="596" y="363" font-family="Arial,sans-serif" font-size="16" letter-spacing="2">EREIGNIS / EPOCH</text>
+    <text x="596" y="392" font-family="Georgia,serif" font-style="italic" font-size="20">1933–45</text>
+    <text x="906" y="343" font-family="Georgia,serif" font-size="42">Dwelling</text>
+    <text x="906" y="375" font-family="Arial,sans-serif" font-size="16" letter-spacing="2">THING / FOURFOLD</text>
+    <text x="906" y="402" font-family="Georgia,serif" font-style="italic" font-size="20">1945–76</text>
+  </g>
+  <g fill="#9d4e39" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">
+    <text x="285" y="590">RISK / HEROIC SUBJECT</text>
+    <text x="596" y="590">RISK / MYTHOPOLITICAL CAPTURE</text>
+    <text x="906" y="590">RISK / POETIC QUIETISM</text>
+  </g>
+  <path d="M60 665H1140" stroke="#173c4b" stroke-width="2"/>
+  <text x="60" y="697" fill="#173c4b" font-family="Georgia,serif" font-size="24" font-style="italic">A crossing reopens a question; it does not complete a stage.</text>
+  <text x="1140" y="697" text-anchor="end" fill="#416f70" font-family="Arial,sans-serif" font-size="15">EXPERIMENTAL MAP ↗</text>
+</svg>

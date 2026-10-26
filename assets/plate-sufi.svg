@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1040" role="img" aria-labelledby="title desc">
+  <title id="title">Sufi Heidegger after Corbin</title>
+  <desc id="desc">Heideggerian questions lead to Corbin's ta’wil and imaginal hinge. Four distinct intellectual afterlives and four film/art resonances branch outward, returning to a workshop and risk ledger.</desc>
+  <rect width="1400" height="1040" fill="#f5f1e8"/>
+  <text x="45" y="55" fill="#416f70" font-family="Arial,sans-serif" font-size="16" letter-spacing="4">BEYNGLAB / PLATE 03</text>
+  <text x="1355" y="55" text-anchor="end" fill="#416f70" font-family="Arial,sans-serif" font-size="15" letter-spacing="2">RECEPTION FIELD / V 1.0</text>
+  <g fill="#e2eae5" stroke="#416f70" stroke-width="2">
+    <rect x="82" y="96" width="460" height="120"/>
+    <rect x="858" y="96" width="460" height="120"/>
+  </g>
+  <g fill="#173c4b" font-family="Georgia,serif" font-size="34">
+    <text x="110" y="148">Heideggerian question</text>
+    <text x="886" y="148">Corbin / ta’wil / imaginal</text>
+  </g>
+  <g fill="#52656b" font-family="Arial,sans-serif" font-size="18">
+    <text x="110" y="185">worldhood · hermeneutics · language</text>
+    <text x="886" y="185">Suhrawardi · image as disclosure</text>
+  </g>
+  <path d="M542 155H858" fill="none" stroke="#173c4b" stroke-width="3"/>
+  <path d="M842 147L858 155L842 163" fill="none" stroke="#173c4b" stroke-width="3"/>
+  <text x="700" y="135" text-anchor="middle" fill="#416f70" font-family="Arial,sans-serif" font-size="15" letter-spacing="1">HISTORICAL HINGE</text>
+  <path d="M1088 216V274M225 274H1175M225 274V303M542 274V303M858 274V303M1175 274V303" fill="none" stroke="#416f70" stroke-width="2"/>
+  <text x="45" y="289" fill="#416f70" font-family="Arial,sans-serif" font-size="15" letter-spacing="2">DISTINCT AFTERLIVES</text>
+  <g fill="#fffdf7" stroke="#9fb8b0" stroke-width="2">
+    <rect x="72" y="303" width="302" height="166"/><rect x="390" y="303" width="302" height="166"/>
+    <rect x="708" y="303" width="302" height="166"/><rect x="1026" y="303" width="302" height="166"/>
+  </g>
+  <g fill="#173c4b" font-family="Georgia,serif" font-size="31">
+    <text x="94" y="354">Fardid</text><text x="412" y="354">Shayegan</text>
+    <text x="730" y="354">Nasr</text><text x="1048" y="354">El-Bizri</text>
+  </g>
+  <g fill="#52656b" font-family="Arial,sans-serif" font-size="17">
+    <text x="94" y="393">contested reception</text><text x="412" y="393">dualism / self-critique</text>
+    <text x="730" y="393">adjacent sacred-art line</text><text x="1048" y="393">Avicenna / phenomenology</text>
+  </g>
+  <g fill="#9d4e39" font-family="Arial,sans-serif" font-size="16">
+    <text x="94" y="439">RISK / MYTHOPOLITICS</text><text x="412" y="439">RISK / FIXED DUALISM</text>
+    <text x="730" y="439">RISK / CONFLATION</text><text x="1048" y="439">RISK / FALSE LINEAGE</text>
+  </g>
+  <path d="M700 469V544M225 544H1175M225 544V576M542 544V576M858 544V576M1175 544V576" fill="none" stroke="#416f70" stroke-width="2" stroke-dasharray="8 8"/>
+  <text x="45" y="562" fill="#416f70" font-family="Arial,sans-serif" font-size="15" letter-spacing="2">FILM &amp; ART / BEYNGLAB RESONANCES</text>
+  <g fill="#e8ebe3" stroke="#9fb8b0" stroke-width="2">
+    <rect x="72" y="576" width="302" height="155"/><rect x="390" y="576" width="302" height="155"/>
+    <rect x="708" y="576" width="302" height="155"/><rect x="1026" y="576" width="302" height="155"/>
+  </g>
+  <g fill="#173c4b" font-family="Georgia,serif" font-size="28">
+    <text x="94" y="629">Kiarostami</text><text x="412" y="629">Bayzai</text>
+    <text x="730" y="629">Farmanfarmaian</text><text x="1048" y="629">Neshat</text>
+  </g>
+  <g fill="#52656b" font-family="Arial,sans-serif" font-size="17">
+    <text x="94" y="670">road · voice · delay</text><text x="412" y="670">Travelers · threshold</text>
+    <text x="730" y="670">mirror · geometry</text><text x="1048" y="670">veil · calligraphy · voice</text>
+  </g>
+  <g fill="#9d4e39" font-family="Arial,sans-serif" font-size="16">
+    <text x="94" y="703">NO INFLUENCE CLAIM</text><text x="412" y="703">NO INFLUENCE CLAIM</text>
+    <text x="730" y="703">NO INFLUENCE CLAIM</text><text x="1048" y="703">NO INFLUENCE CLAIM</text>
+  </g>
+  <path d="M700 731V789" stroke="#9d4e39" stroke-width="2"/>
+  <rect x="376" y="789" width="648" height="122" fill="#173c4b"/>
+  <text x="700" y="841" text-anchor="middle" fill="#fffdf7" font-family="Georgia,serif" font-size="33">Ta’wil Portal / risk ledger</text>
+  <text x="700" y="875" text-anchor="middle" fill="#bdd1cb" font-family="Arial,sans-serif" font-size="18">describe · interpret · ask who is absent · revise</text>
+  <path d="M50 959H1350" stroke="#173c4b" stroke-width="2"/>
+  <text x="50" y="993" fill="#173c4b" font-family="Georgia,serif" font-style="italic" font-size="23">The branches organize questions. They do not prove descent.</text>
+  <text x="1350" y="993" text-anchor="end" fill="#416f70" font-family="Arial,sans-serif" font-size="15">SOLID / HINGE · THIN / COMPARISON · DASHED / RESONANCE</text>
+</svg>

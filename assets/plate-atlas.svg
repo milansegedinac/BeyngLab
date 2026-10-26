@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 950" role="img" aria-labelledby="title desc">
+  <title id="title">Regional Daseins Atlas</title>
+  <desc id="desc">D0 leads through attunement, worlding, and dwelling to six overlapping grammar cards. Each card displays its operation and danger. The grammars are not places or peoples.</desc>
+  <rect width="1200" height="950" fill="#f5f1e8"/>
+  <text x="42" y="54" fill="#416f70" font-family="Arial,sans-serif" font-size="15" letter-spacing="4">BEYNGLAB / PLATE 02</text>
+  <text x="1158" y="54" text-anchor="end" fill="#416f70" font-family="Arial,sans-serif" font-size="14" letter-spacing="2">DISCLOSURE GRAMMARS / V 1.0</text>
+  <circle cx="600" cy="133" r="58" fill="#173c4b"/>
+  <text x="600" y="144" text-anchor="middle" fill="#fffdf7" font-family="Georgia,serif" font-size="32" font-style="italic">D0</text>
+  <text x="600" y="217" text-anchor="middle" fill="#52656b" font-family="Arial,sans-serif" font-size="16">PAUSE BEFORE INTERVENTION</text>
+  <path d="M600 192V253" stroke="#416f70" stroke-width="2"/>
+  <path d="M170 285H1030" stroke="#416f70" stroke-width="2"/>
+  <g fill="#e4ece6" stroke="#416f70" stroke-width="2">
+    <rect x="175" y="260" width="245" height="50" rx="25"/>
+    <rect x="478" y="260" width="245" height="50" rx="25"/>
+    <rect x="780" y="260" width="245" height="50" rx="25"/>
+  </g>
+  <g fill="#173c4b" font-family="Georgia,serif" font-style="italic" font-size="25" text-anchor="middle">
+    <text x="297" y="293">attunement</text><text x="600" y="293">worlding</text><text x="902" y="293">dwelling</text>
+  </g>
+  <path d="M600 311V351M205 351H995M205 351V388M600 351V388M995 351V388" fill="none" stroke="#416f70" stroke-width="2"/>
+  <path d="M205 602V631M600 602V631M995 602V631M205 631H995M205 631V660M600 631V660M995 631V660" fill="none" stroke="#416f70" stroke-width="2" stroke-dasharray="6 7"/>
+  <g fill="#fffdf7" stroke="#9fb8b0" stroke-width="2">
+    <rect x="42" y="388" width="350" height="214"/><rect x="425" y="388" width="350" height="214"/><rect x="808" y="388" width="350" height="214"/>
+    <rect x="42" y="660" width="350" height="214"/><rect x="425" y="660" width="350" height="214"/><rect x="808" y="660" width="350" height="214"/>
+  </g>
+  <g fill="#173c4b" font-family="Georgia,serif" font-size="31">
+    <text x="64" y="440">Imaginal</text><text x="447" y="440">Metanoetic</text><text x="830" y="440">Pluriversal</text>
+    <text x="64" y="712">Mythic–Traditionalist</text><text x="447" y="712">Pharmacological</text><text x="830" y="712">Cosmotechnical</text>
+  </g>
+  <g fill="#52656b" font-family="Arial,sans-serif" font-size="17">
+    <text x="64" y="477">image / ta’wil / world</text><text x="447" y="477">failure / repentance / turn</text><text x="830" y="477">territory / relation / autonomy</text>
+    <text x="64" y="749">myth / origin / belonging</text><text x="447" y="749">technics / attention / care</text><text x="830" y="749">plural technics / detour</text>
+  </g>
+  <g stroke="#c5a597" stroke-width="1.5">
+    <path d="M64 513H370M447 513H753M830 513H1136M64 785H370M447 785H753M830 785H1136"/>
+  </g>
+  <g fill="#9d4e39" font-family="Arial,sans-serif" font-size="16">
+    <text x="64" y="544">RISK / DEHISTORICIZATION</text>
+    <text x="447" y="544">RISK / GUILT CAPTURE</text>
+    <text x="830" y="544">RISK / ROMANTIC LOCALISM</text>
+    <text x="64" y="816">RISK / ENEMY-MAKING</text>
+    <text x="447" y="816">RISK / THERAPEUTIC TECHNOCRACY</text>
+    <text x="830" y="816">RISK / COMPARATIVE ESSENTIALISM</text>
+  </g>
+  <text x="600" y="922" text-anchor="middle" fill="#173c4b" font-family="Georgia,serif" font-size="23" font-style="italic">Use several lenses. Ask those involved to correct the map.</text>
+</svg>
