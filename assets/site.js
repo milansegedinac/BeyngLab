@@ -204,6 +204,102 @@
     menuToggle.setAttribute("aria-expanded", String(opening));
   });
 
+  // Look picker. The <head> of each page applies the saved look before first paint;
+  // this builds the header control and keeps the choice in localStorage.
+  const THEME_KEY = "beynglab-theme";
+  const themes = [
+    { id: "archive", name: "Archive", note: "The original: paper, ink, and rust.", colors: ["#f5f1e8", "#173c4b", "#9d4e39"], meta: "#173c4b" },
+    { id: "nocturne", name: "Nocturne", note: "Dark and quiet, lit in amber.", colors: ["#11151c", "#ece4d4", "#e0a96d"], meta: "#11151c" },
+    { id: "grid", name: "Grid", note: "Swiss modernist: black, white, signal red.", colors: ["#ffffff", "#111111", "#e2231a"], meta: "#111111" },
+    { id: "riso", name: "Riso", note: "Zine print: blue ink, fluorescent pink.", colors: ["#f7f2e7", "#3255a4", "#ff48b0"], meta: "#3255a4" },
+  ];
+  const headerInner = document.querySelector(".header-inner");
+
+  function applyTheme(id) {
+    const theme = themes.find((item) => item.id === id) || themes[0];
+    if (theme.id === "archive") delete document.documentElement.dataset.theme;
+    else document.documentElement.dataset.theme = theme.id;
+    document.querySelector('meta[name="theme-color"]')?.setAttribute("content", theme.meta);
+    try { localStorage.setItem(THEME_KEY, theme.id); } catch (_error) { /* private mode: choice lasts this page only */ }
+    document.querySelectorAll("[data-theme-choice]").forEach((option) => {
+      option.setAttribute("aria-checked", String(option.dataset.themeChoice === theme.id));
+    });
+  }
+
+  if (headerInner) {
+    const picker = document.createElement("div");
+    picker.className = "theme-picker";
+    const trigger = document.createElement("button");
+    trigger.type = "button";
+    trigger.className = "theme-trigger";
+    trigger.setAttribute("aria-haspopup", "true");
+    trigger.setAttribute("aria-expanded", "false");
+    trigger.setAttribute("aria-controls", "theme-menu");
+    trigger.setAttribute("aria-label", "Choose a look");
+    trigger.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.2"></circle>'
+      + '<path class="fill" d="M12 3.8a8.2 8.2 0 0 1 0 16.4z"></path></svg><span>Look</span>';
+    const panel = document.createElement("div");
+    panel.className = "theme-menu";
+    panel.id = "theme-menu";
+    panel.hidden = true;
+    panel.setAttribute("role", "radiogroup");
+    panel.setAttribute("aria-label", "Look and feel");
+    const label = document.createElement("span");
+    label.className = "serial";
+    label.textContent = "Choose a look";
+    panel.append(label);
+    for (const theme of themes) {
+      const option = document.createElement("button");
+      option.type = "button";
+      option.className = "theme-option";
+      option.dataset.themeChoice = theme.id;
+      option.setAttribute("role", "radio");
+      const swatch = document.createElement("span");
+      swatch.className = "theme-swatch";
+      swatch.setAttribute("aria-hidden", "true");
+      for (const color of theme.colors) {
+        const chip = document.createElement("i");
+        chip.style.background = color;
+        swatch.append(chip);
+      }
+      const text = document.createElement("span");
+      const name = document.createElement("strong");
+      name.textContent = theme.name;
+      const note = document.createElement("small");
+      note.textContent = theme.note;
+      text.append(name, note);
+      option.append(swatch, text);
+      option.addEventListener("click", () => applyTheme(theme.id));
+      panel.append(option);
+    }
+    picker.append(trigger, panel);
+    headerInner.append(picker);
+
+    const closePanel = () => {
+      panel.hidden = true;
+      trigger.setAttribute("aria-expanded", "false");
+    };
+    trigger.addEventListener("click", () => {
+      panel.hidden = !panel.hidden;
+      trigger.setAttribute("aria-expanded", String(!panel.hidden));
+      if (!panel.hidden) panel.querySelector('[aria-checked="true"]')?.focus();
+    });
+    document.addEventListener("click", (event) => {
+      if (!panel.hidden && !picker.contains(event.target)) closePanel();
+    });
+    panel.addEventListener("keydown", (event) => {
+      const options = Array.from(panel.querySelectorAll(".theme-option"));
+      const index = options.indexOf(document.activeElement);
+      if (event.key === "Escape") { closePanel(); trigger.focus(); }
+      if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+        event.preventDefault();
+        const step = event.key === "ArrowDown" ? 1 : -1;
+        options[(index + step + options.length) % options.length].focus();
+      }
+    });
+    applyTheme(document.documentElement.dataset.theme || "archive");
+  }
+
   const worksheet = document.querySelector("#worksheet");
   document.querySelector("[data-download-notes]")?.addEventListener("click", () => {
     const data = new FormData(worksheet);

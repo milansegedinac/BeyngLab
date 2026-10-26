@@ -1,0 +1,108 @@
+/* Looks. The default (no data-theme) is the original Archive look in site.css.
+   Each theme sets the color tokens site.css reads, plus a few typographic moves. */
+
+/* Theme picker (shared by every look) */
+.theme-picker { position: relative; display: flex; align-items: center; }
+.theme-trigger { display: flex; align-items: center; gap: 8px; padding: 8px 0 8px 16px; border: 0; border-left: 1px solid var(--line); background: transparent; color: var(--ink); font-size: .78rem; font-weight: 650; }
+.theme-trigger svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 1.7; }
+.theme-trigger svg .fill { fill: currentColor; stroke: none; }
+.theme-menu { position: absolute; z-index: 30; top: calc(100% + 18px); right: 0; width: 310px; padding: 10px; background: var(--paper); border: 1px solid var(--ink); box-shadow: 0 18px 50px var(--shadow, #081e2ab0); }
+.theme-menu[hidden] { display: none; }
+.theme-menu .serial { display: block; padding: 6px 8px 10px; }
+.theme-option { display: grid; grid-template-columns: 46px 1fr; gap: 12px; align-items: center; width: 100%; padding: 10px 8px; border: 0; border-top: 1px solid var(--line); background: none; color: var(--ink); text-align: left; }
+.theme-option:hover { background: var(--hover, #e8ece5); }
+.theme-option[aria-checked="true"] { box-shadow: inset 3px 0 0 var(--rust); }
+.theme-option strong { display: block; font: 400 1.25rem/1.1 var(--serif); }
+.theme-option small { display: block; margin-top: 3px; color: var(--muted); font-size: .76rem; line-height: 1.35; }
+.theme-swatch { display: grid; grid-template-columns: repeat(3, 1fr); height: 34px; border: 1px solid var(--line); }
+.theme-swatch i { display: block; }
+@media (max-width: 1060px) {
+  .theme-trigger { padding-left: 14px; margin-left: 14px; }
+  .theme-trigger span { display: none; }
+  .theme-menu { top: calc(100% + 12px); }
+}
+@media (max-width: 920px) {
+  .theme-menu { position: fixed; top: 80px; right: 16px; width: min(310px, calc(100vw - 32px)); }
+}
+@media (max-width: 660px) {
+  .header-inner { gap: 12px; }
+  .theme-picker { flex-shrink: 0; }
+  .theme-trigger { margin-left: 4px; padding-left: 12px; }
+  .mobile-menu { white-space: nowrap; }
+}
+
+/* ----- Nocturne: dark, contemplative, lit in amber ----- */
+[data-theme="nocturne"] {
+  color-scheme: dark;
+  --paper: #11151c; --ink: #ece4d4; --deep: #0a0d12; --teal: #8fb8ad; --rust: #e0a96d;
+  --white: #1a2029; --line: #2c3440; --muted: #a39c8f; --pale: #1a2029;
+  --hover: #1b222c; --tint: #1c222b; --figure: #161c25; --figure-line: #2f3b48; --figure-stroke: #8fb8ad;
+  --field: #171c24; --input-line: #3c4754; --ink-soft: #cdc5b6; --focus: #e0a96d;
+  --band: #1a212b; --band-deep: #0a0d12; --band-alt: #24363b;
+  --on-band: #f1e9da; --on-band-muted: #a9b5ae; --on-band-soft: #d8d3c8; --on-band-line: #364250; --on-band-accent: #ebb87e;
+  --shadow: #000000b3; --backdrop: #05080cd9;
+}
+[data-theme="nocturne"] h1 em, [data-theme="nocturne"] h2 em { color: var(--rust); }
+[data-theme="nocturne"] .button-primary { background: var(--rust); border-color: var(--rust); color: #11151c; }
+[data-theme="nocturne"] .button-primary:hover { background: var(--ink); border-color: var(--ink); color: #11151c; }
+[data-theme="nocturne"] .figure-core { background: var(--rust); color: #11151c; box-shadow: 0 0 60px #e0a96d55; }
+[data-theme="nocturne"] .hero-figure { background: radial-gradient(circle at 50% 49%, #1f2733, var(--figure) 70%); }
+[data-theme="nocturne"] .figure-paper { background: #ebe5d8; border-color: #ebe5d8; }
+[data-theme="nocturne"] .evidence.primary { color: #9fcbbf; border-color: #4f7a72; }
+[data-theme="nocturne"] .evidence.historical { color: #aeb6cc; border-color: #5b6479; }
+[data-theme="nocturne"] .evidence.interpretive { color: #d9c88f; border-color: #776a44; }
+[data-theme="nocturne"] .evidence.experimental { color: #eeb08f; border-color: #8a5a45; }
+[data-theme="nocturne"] .risk-line.danger { border-color: #6b4a3d; }
+[data-theme="nocturne"] .topos-entry-link { background: var(--rust); color: #11151c; }
+
+/* ----- Grid: Swiss modernist, black / white / signal red ----- */
+[data-theme="grid"] {
+  --paper: #ffffff; --ink: #111111; --deep: #111111; --teal: #e2231a; --rust: #e2231a;
+  --white: #ffffff; --line: #111111; --muted: #4a4a4a; --pale: #f1f1f1;
+  --hover: #f1f1f1; --tint: #f1f1f1; --figure: #f4f4f4; --figure-line: #d2d2d2; --figure-stroke: #111111;
+  --field: #ffffff; --input-line: #111111; --ink-soft: #2b2b2b; --focus: #e2231a;
+  --band: #111111; --band-deep: #111111; --band-alt: #e2231a;
+  --on-band: #ffffff; --on-band-muted: #b8b8b8; --on-band-soft: #e8e8e8; --on-band-line: #3d3d3d; --on-band-accent: #ff5d55;
+  --serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+[data-theme="grid"] h1, [data-theme="grid"] h2, [data-theme="grid"] h3 { font-weight: 700; letter-spacing: -.045em; }
+[data-theme="grid"] h1 em, [data-theme="grid"] h2 em { font-style: normal; color: var(--rust); }
+[data-theme="grid"] .brand { font-weight: 800; letter-spacing: -.06em; }
+[data-theme="grid"] .brand-lab { font-style: normal; color: var(--rust); }
+[data-theme="grid"] .brand-mark, [data-theme="grid"] .brand-mark i, [data-theme="grid"] .figure-orbit, [data-theme="grid"] .figure-core { border-radius: 0; }
+[data-theme="grid"] .figure-core { background: var(--rust); }
+[data-theme="grid"] .site-header { border-bottom: 3px solid var(--ink); }
+[data-theme="grid"] .portal-symbol { font-weight: 700; }
+[data-theme="grid"] .portal-card:hover { background: var(--rust); color: #fff; }
+[data-theme="grid"] .portal-card:hover .serial, [data-theme="grid"] .portal-card:hover p, [data-theme="grid"] .portal-card:hover .portal-symbol { color: #fff; }
+[data-theme="grid"] .teaser-list strong, [data-theme="grid"] .archive-list strong, [data-theme="grid"] .related-card strong { font-weight: 700; letter-spacing: -.035em; }
+[data-theme="grid"] .d0-band p, [data-theme="grid"] .method-note p, [data-theme="grid"] .editorial-strip p, [data-theme="grid"] .topos-question { font-style: normal; font-weight: 500; }
+[data-theme="grid"] .theme-option strong { font-weight: 700; }
+
+/* ----- Riso: risograph zine, blue ink and fluorescent pink on warm paper ----- */
+[data-theme="riso"] {
+  --paper: #f7f2e7; --ink: #23397a; --deep: #23397a; --teal: #c81f6a; --rust: #c81f6a;
+  --white: #fffdf8; --line: #b6bedb; --muted: #4c5885; --pale: #ffe6f1;
+  --hover: #ffe3ef; --tint: #fff1a6; --figure: #ffe9f2; --figure-line: #f5a8cc; --figure-stroke: #3255a4;
+  --field: #fffdf8; --input-line: #3255a4; --ink-soft: #2f4486; --focus: #ff48b0;
+  --band: #3255a4; --band-deep: #23397a; --band-alt: #c81f6a;
+  --on-band: #fff8ee; --on-band-muted: #ffc6e0; --on-band-soft: #eef0ff; --on-band-line: #6e86c6; --on-band-accent: #ffe800;
+  --serif: Rockwell, "Rockwell Nova", "Roboto Slab", "American Typewriter", "Courier New", serif;
+  --mono: ui-monospace, "SFMono-Regular", "Cascadia Mono", Consolas, monospace;
+}
+[data-theme="riso"] h1, [data-theme="riso"] h2, [data-theme="riso"] h3 { font-weight: 700; letter-spacing: -.03em; }
+[data-theme="riso"] h1 { text-shadow: .045em .04em 0 #ff48b080; }
+[data-theme="riso"] h1 em, [data-theme="riso"] h2 em { color: var(--rust); }
+[data-theme="riso"] .eyebrow, [data-theme="riso"] .serial, [data-theme="riso"] .figure-label, [data-theme="riso"] .figure-caption,
+[data-theme="riso"] .teaser-list span, [data-theme="riso"] kbd { font-family: var(--mono); letter-spacing: .06em; }
+[data-theme="riso"] .button-primary { background: var(--rust); border-color: var(--rust); box-shadow: 4px 4px 0 var(--ink); }
+[data-theme="riso"] .button-primary:hover { background: var(--ink); border-color: var(--ink); box-shadow: 4px 4px 0 #ff48b0; }
+[data-theme="riso"] .portal-card, [data-theme="riso"] .related-card { transition: background .2s, box-shadow .2s, transform .2s; }
+[data-theme="riso"] .portal-card:hover, [data-theme="riso"] .related-card:hover { position: relative; z-index: 1; transform: translate(-3px, -3px); box-shadow: 6px 6px 0 #ff48b0; background: var(--white); }
+[data-theme="riso"] .hero-figure { background-color: var(--figure); background-image: radial-gradient(#ff48b055 1.2px, transparent 1.4px); background-size: 9px 9px; }
+[data-theme="riso"] .figure-core { background: var(--rust); box-shadow: 7px 6px 0 #3255a4cc; }
+[data-theme="riso"] .figure-orbit:nth-child(odd) { border-color: #ff48b0; }
+[data-theme="riso"] .workshop-callout, [data-theme="riso"] .grammar-boundary, [data-theme="riso"] .station-risk { border-color: var(--rust); }
+[data-theme="riso"] .figure-paper { background: #fffaf0; }
+[data-theme="riso"] .site-header { border-bottom: 2px solid var(--ink); }
